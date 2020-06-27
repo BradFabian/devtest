@@ -1,0 +1,68 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: yellow;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 1%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 133, 0.8)
+    ),
+    url("../imgs/tyler-nix-6mze64HRU2Q-unsplash.jpg");
+  background-size: cover;
+  background-position: top;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headline__title {
+  text-align: center;
+  color: aliceblue;
+  display: inline-block;
+  text-shadow: 1px 2px black;
+  font-size: 1.9vw;
+}
+
+.headlines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headlines__title {
+  font-size: 20px;
+  margin: 10px;
+  color: whitesmoke;
+  text-shadow: 0.5px 0.5px gray;
+  text-align: center;
+  text-shadow: 1px 2px black;
+  font-size: 2vmin;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  list-style-type: none;
+}
+
+.headlines__title:hover {
+  transform: scale(1.2);
+}
